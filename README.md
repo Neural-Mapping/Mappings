@@ -20,3 +20,6 @@
 
 ### Combined Image  
 ![combined_image](https://github.com/user-attachments/assets/2bcb2767-0c37-43d2-acae-bfa8dbc85be5)
+
+### 3D view
+![WhatsApp Image 2025-02-23 at 15 55 24](https://github.com/user-attachments/assets/ebe8bb09-f4f8-4124-ae36-1ad095944d32)
