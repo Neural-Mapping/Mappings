@@ -100,28 +100,44 @@ def get_images(km, grid, grid_dim, script, box_dim=400, date_start = "2024-04-12
             row = 0  # Reset column position
     return canvas
 
-def combine_images_based_on_mask(image1, image2, mask, threshold=0, blur = 1):
+def merge_images(image1, image2, mask):
     """
-    Combine two images based on a binary mask with thresholding.
-    If the mask value is greater than the threshold, overwrite image2 with image1.
+    Merges two images using a binary mask. 
+    - image1 is placed where the mask is white (255).
+    - image2 is used where the mask is black (0).
+    - If a pixel in image1 is nearly white (≥ [150,150,150]), use image2.
+    - If a pixel in image2 is black, replace it with image1.
 
     Args:
-        image1 (numpy.ndarray): The first image (will overwrite image2 where mask > threshold).
-        image2 (numpy.ndarray): The second image.
-        mask (numpy.ndarray): The binary mask (same size as the images).
-        threshold (int, float): The threshold to control when image1 overwrites image2.
-    
+        image1 (numpy.ndarray): The top image.
+        image2 (numpy.ndarray): The bottom image.
+        mask (numpy.ndarray): Binary mask (255 for image1, 0 for image2).
+
     Returns:
-        numpy.ndarray: The combined image.
+        numpy.ndarray: The merged image.
     """
-    # Ensure mask is binary and has the same dimensions as the images
-    mask = mask.astype(np.uint8)
+    # Normalize mask to binary (1 for white, 0 for black)
+    mask = (mask == 255).astype(np.uint8)  
 
-    # Apply the threshold to the mask (values above threshold will be 1, others 0)
-    # binary_mask = (mask > threshold).astype(np.uint8) * 255
+    # Expand mask to match the number of channels if needed
+    if len(image1.shape) == 3 and len(mask.shape) == 2:
+        mask = np.expand_dims(mask, axis=-1)
 
-    # Combine the images based on the binary mask
-    mask = cv2.blur(mask, (blur,blur))
-    combined_image = np.where(mask[:, :, None] > threshold, image1, image2)
-    
-    return combined_image
+    # Identify nearly white pixels in image1
+    if len(image1.shape) == 3:  # RGB Image
+        nearly_white_pixels = np.all(image1 >= [150, 150, 150], axis=-1)
+        black_pixels_image2 = np.all(image2 == [0, 0, 0], axis=-1)  # Find black pixels in image2
+    else:  # Grayscale Image
+        nearly_white_pixels = image1 >= 150
+        black_pixels_image2 = image2 == 0  # Find black pixels in image2
+
+    # Update mask: if a pixel in image1 is nearly white, use image2 instead
+    mask[nearly_white_pixels] = 0
+
+    # Blend images based on mask
+    merged = (image1 * mask) + (image2 * (1 - mask))
+
+    # Replace black pixels in image2 with image1
+    merged[black_pixels_image2] = image1[black_pixels_image2]
+
+    return merged.astype(np.uint8)
