@@ -1,0 +1,6 @@
+Project Name: Pernote
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 33.23119, 75.18916
+Start Date: 2024-05-01
+End Date: 2024-05-06

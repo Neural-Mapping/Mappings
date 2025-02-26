@@ -29,7 +29,7 @@ def generate_grid(top_left_lat, top_left_lon, grid_side = 9, distance=400000):
     delta_lat = (distance / R) * (180 / math.pi)
     delta_lon = (distance / (R * math.cos(top_left_lat_rad))) * (180 / math.pi)
 
-    # Generate grid (9x9)
+    # Generate grid (grid_side x grid_side)
     for row in range(grid_side):  # Move downward
         for col in range(grid_side):  # Move right
             min_lat = top_left_lat - (row * delta_lat)  # Move south
