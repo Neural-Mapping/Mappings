@@ -1,0 +1,6 @@
+Project Name: Paryote Village
+Grid size: 1 x 1
+Box Dimension: 2.5 km
+Bounding Box: 33.1359, 75.43393
+Start Date: 2017-02-12
+End Date: 2017-03-04

@@ -1,4 +1,4 @@
-evalscript_lsm = """
+evalscript_lsm_2 = """
 function setup() {
   return {
     input: ["B02", "B03", "B04", "B08", "B11"],
@@ -26,9 +26,9 @@ function evaluatePixel(sample) {
     return [0, 0, 0]; // Black
   }
 
-  // Cloud Detection - Turn Clouds to Red
+  // Cloud Detection - Turn Clouds to Black
   if (sample.B11 > 0.1 && bRatio > 0.001) {
-    return [0, 0, 0]; // Pure Red
+    return [0, 0, 0]; // Pure Black
   }
   if (sample.B11 > 0.1 && bRatio > 0 && NDGR > 0) {
     return [1, 0, 0]; // Pure Red
@@ -49,56 +49,138 @@ function evaluatePixel(sample) {
 }
 """
 
-evalscript_lsm_only = """
-function setup() {
+
+evalscript_lsm = """function setup() {
   return {
-    input: ["B02", "B03", "B04", "B08", "B11"],
+    input: ["B02", "B03", "B04", "B08", "B11", "CLM"],
     output: { bands: 3 },
+
   };
 }
 
-function calcIndex(x, y) {
-  return (x - y) / (x + y);
-}
-
-function clip(a) {
-  return Math.max(0, Math.min(1, a));
-}
+function stretch(val, min, max) { return (val - min) / (max - min); }
 
 function evaluatePixel(sample) {
+  var bsi = ((sample.B11 + sample.B04) - (sample.B08 + sample.B02)) / ((sample.B11 + sample.B04) + (sample.B08 + sample.B02));
+  var NDVI = index(sample.B08, sample.B04);
+  var NDWI = index(sample.B03, sample.B08);
+
+  // Cloud Detection - Turn Clouds to Black
   let bRatio = (sample.B03 - 0.175) / (0.39 - 0.175);
-  let NDGR = calcIndex(sample.B03, sample.B04);
-  let NDVI = calcIndex(sample.B08, sample.B04);
-  let NDWI = calcIndex(sample.B03, sample.B08);
-  let gain = 2.5;
-
-  // Handle invalid or non-land areas
-  if (!isFinite(NDGR) || !isFinite(NDVI) || !isFinite(NDWI) || sample.B02 === 0) {
-    return [0, 0, 0]; // Black
-  }
-
-  // Cloud Detection - Turn Clouds to Red
   if (sample.B11 > 0.1 && bRatio > 0.001) {
-    return [0, 0, 0]; // Pure Red
-  }
-  if (sample.B11 > 0.1 && bRatio > 0 && NDGR > 0) {
-    return [1, 0, 0]; // Pure Red
+    return [0, 0, 0]; // Pure Black
   }
 
-  // Water Detection
+  if (sample.CLM == 1) {
+    return [sample.B04,
+    sample.B03,
+    3 * sample.B02]
+  }
+
   if (NDWI > 0.15) {
-    return [0, 0.2, 1.0 * NDWI];
+    return [0, 0.2, 1.0 * NDWI]
+  }
+  if ((sample.B11 > 0.8) || (NDVI < 0.15)) {
+    return [1.5, 0.7, -1]
+  }
+  if (NDVI > 0.25) {
+    return [0, 0.2 * NDVI, 0]
+  }
+  else {
+    return [3.5 * bsi, 0.3, 0]
   }
 
-  // Other regions
-  if (sample.B11 > 0.95 || NDVI < 0.1) {
-    return [1.5, 0.7, -1]; // Special visualization
-  }
-
-  // Normal RGB Processing
-  return [0, 0, 0];
 }
 """
+
+evalscript_lsm_only = """
+function setup() {
+  return {
+    input: ["B02", "B03", "B04", "B08", "B11", "CLM"],
+    output: { bands: 3 },
+
+  };
+}
+
+function stretch(val, min, max) { return (val - min) / (max - min); }
+
+function evaluatePixel(sample) {
+  var bsi = ((sample.B11 + sample.B04) - (sample.B08 + sample.B02)) / ((sample.B11 + sample.B04) + (sample.B08 + sample.B02));
+  var NDVI = index(sample.B08, sample.B04);
+  var NDWI = index(sample.B03, sample.B08);
+
+  // Cloud Detection - Turn Clouds to Black
+  let bRatio = (sample.B03 - 0.175) / (0.39 - 0.175);
+  if (sample.B11 > 0.1 && bRatio > 0.001) {
+    return [0, 0, 0]; // Pure Black
+  }
+
+  if (NDWI > 0.15) {
+    return [0, 0, 0]
+  }
+  if (((sample.B11 > 0.8) || (NDVI < 0.15)) && (bsi > 0.1)) {
+  return [1.5, 0.7, -1]; // Special visualization for possible landslide zones
+  }
+  if (NDVI > 0.1) {
+    return [0, 0 * NDVI, 0]
+  }
+  else {
+    return [3.5 * bsi, 0.3, 0]
+  }
+
+}
+"""
+
+# evalscript_lsm_only = """
+# function setup() {
+#   return {
+#     input: ["B02", "B03", "B04", "B08", "B11"],
+#     output: { bands: 3 },
+#   };
+# }
+
+# function calcIndex(x, y) {
+#   return (x - y) / (x + y);
+# }
+
+# function clip(a) {
+#   return Math.max(0, Math.min(1, a));
+# }
+
+# function evaluatePixel(sample) {
+#   let bRatio = (sample.B03 - 0.175) / (0.39 - 0.175);
+#   let NDGR = calcIndex(sample.B03, sample.B04);
+#   let NDVI = calcIndex(sample.B08, sample.B04);
+#   let NDWI = calcIndex(sample.B03, sample.B08);
+#   let gain = 2.5;
+
+#   // Handle invalid or non-land areas
+#   if (!isFinite(NDGR) || !isFinite(NDVI) || !isFinite(NDWI) || sample.B02 === 0) {
+#     return [0, 0, 0]; // Black
+#   }
+
+#   // Cloud Detection - Turn Clouds to Red
+#   if (sample.B11 > 0.1 && bRatio > 0.001) {
+#     return [0, 0, 0]; // Pure Red
+#   }
+#   if (sample.B11 > 0.1 && bRatio > 0 && NDGR > 0) {
+#     return [1, 0, 0]; // Pure Red
+#   }
+
+#   // Water Detection
+#   if (NDWI > 0.15) {
+#     return [0, 0.2, 1.0 * NDWI];
+#   }
+
+#   // Other regions
+#   if (sample.B11 > 0.95 || NDVI < 0.1) {
+#     return [1.5, 0.7, -1]; // Special visualization
+#   }
+
+#   // Normal RGB Processing
+#   return [0, 0, 0];
+# }
+# """
 
 evalscript_NDVI = """
 //VERSION=3
