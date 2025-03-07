@@ -50,7 +50,8 @@ function evaluatePixel(sample) {
 """
 
 
-evalscript_lsm = """function setup() {
+evalscript_lsm = """
+function setup() {
   return {
     input: ["B02", "B03", "B04", "B08", "B11", "CLM"],
     output: { bands: 3 },

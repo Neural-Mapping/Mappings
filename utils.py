@@ -9,6 +9,7 @@ from sentinelhub import (
     CRS,
     BBox,
 )
+import requests
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -17,6 +18,24 @@ config_sentinel = SHConfig(sh_client_id=os.environ.get("sh_client_id"), sh_clien
 from dotenv import load_dotenv
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
+
+
+CLIENT_ID = os.environ.get("sh_client_id")
+CLIENT_SECRET = os.environ.get("sh_client_secret")
+
+
+# Authenticate to get the access token
+def get_access_token():
+    url = "https://services.sentinel-hub.com/oauth/token"
+    payload = {
+        "grant_type": "client_credentials",
+        "client_id": CLIENT_ID,
+        "client_secret": CLIENT_SECRET
+    }
+    response = requests.post(url, data=payload)
+    return response.json().get("access_token")
+
+
 
 def generate_grid(top_left_lat, top_left_lon, grid_side = 9, distance=400000):
     R = 6371000  # Earth's radius in meters
