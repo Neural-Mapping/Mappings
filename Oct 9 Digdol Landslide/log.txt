@@ -1,0 +1,6 @@
+Project Name: Oct 9 Digdol Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.18086750983585
+Start Date: 2018-09-18
+End Date: 2018-10-28

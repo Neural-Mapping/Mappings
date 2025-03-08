@@ -1,0 +1,6 @@
+Project Name: Rayagada Block Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 84.15784971983585
+Start Date: 2018-09-21
+End Date: 

@@ -255,7 +255,7 @@ for landlside_row in range(nasa_landslides.shape[0]):
     diff = NDVI_Before - NDVI_After
     threshold = 0
     tolerance = 60
-    mask = ((NDVI_Before < NDVI_After + tolerance) & (diff > threshold)).astype(np.uint8) * 255
+    mask = ((NDVI_Before > NDVI_After + tolerance) & (diff > threshold)).astype(np.uint8) * 255
     mask = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY)
     mask_resized = cv2.resize(mask, (mask.shape[0]//4, mask.shape[0]//4))
     mask = cv2.resize(mask_resized, mask.shape)

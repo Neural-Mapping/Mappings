@@ -1,0 +1,6 @@
+Project Name: Val Ferret Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 6.88092370983585
+Start Date: 2018-07-31
+End Date: 2018-08-27

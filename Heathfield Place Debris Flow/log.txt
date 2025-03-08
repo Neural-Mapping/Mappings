@@ -1,0 +1,6 @@
+Project Name: Heathfield Place Debris Flow
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -122.69452154016415
+Start Date: 2017-12-21
+End Date: 2018-01-20
