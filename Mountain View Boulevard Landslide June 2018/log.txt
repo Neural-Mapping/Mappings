@@ -1,0 +1,6 @@
+Project Name: Mountain View Boulevard Landslide June 2018
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -108.51006820016416
+Start Date: 2018-06-11
+End Date: 2018-07-24
