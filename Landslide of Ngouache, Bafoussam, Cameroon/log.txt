@@ -1,0 +1,6 @@
+Project Name: Landslide of Ngouache, Bafoussam, Cameroon
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 10.414430829835851
+Start Date: 2019-09-28
+End Date: 2019-11-07

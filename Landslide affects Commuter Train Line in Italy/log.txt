@@ -1,0 +1,6 @@
+Project Name: Landslide affects Commuter Train Line in Italy
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 13.65599025983585
+Start Date: 2020-06-16
+End Date: 2020-06-26

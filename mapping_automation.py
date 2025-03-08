@@ -89,7 +89,6 @@ def get_cloud_coverage(lat, lon, date_list):
     }
     
     cloud_coverage_results = {}
-    
     for date in date_list:
         start_date = datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%dT00:00:00Z")
         end_date = datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%dT23:59:59Z")
@@ -201,7 +200,11 @@ for landlside_row in range(nasa_landslides.shape[0]):
     available_dates = search_available_dates(target_date=nasa_landslides.iloc[landlside_row].event_date.strftime("%Y-%m-%d"),
                                             lat = lat,
                                             lon = lon)
+    if available_dates == None: 
+        print(f"Skipping: {nasa_landslides.iloc[landlside_row].event_title}")
+        continue
     available_dates_cloud_coverage = get_cloud_coverage(lat=lat, lon=lon, date_list=available_dates)
+    
     min_before_date, min_before_cc, min_after_date, min_after_cc = find_best_date(available_dates_cloud_coverage, target_date=date)
     min_before_date, min_before_cc, min_after_date, min_after_cc
 
@@ -252,7 +255,7 @@ for landlside_row in range(nasa_landslides.shape[0]):
     diff = NDVI_Before - NDVI_After
     threshold = 0
     tolerance = 60
-    mask = ((NDVI_Before > NDVI_After + tolerance) & (diff > threshold)).astype(np.uint8) * 255
+    mask = ((NDVI_Before < NDVI_After + tolerance) & (diff > threshold)).astype(np.uint8) * 255
     mask = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY)
     mask_resized = cv2.resize(mask, (mask.shape[0]//4, mask.shape[0]//4))
     mask = cv2.resize(mask_resized, mask.shape)
@@ -281,38 +284,39 @@ for landlside_row in range(nasa_landslides.shape[0]):
     fig, axes = plt.subplots(2, 3, figsize=(20, 10))
 
     # First row
-    # axes[0, 0].imshow(NDVI_Before)
+    axes[0, 0].imshow(NDVI_Before)
     axes[0, 0].set_title("NDVI Before")
     axes[0, 0].axis("off")
 
-    # axes[0, 1].imshow(NDVI_After)
+    axes[0, 1].imshow(NDVI_After)
     axes[0, 1].set_title("NDVI After")
     axes[0, 1].axis("off")
 
-    # axes[0, 2].imshow(True_Color_After)
+    axes[0, 2].imshow(True_Color_After)
     axes[0, 2].set_title("True Color After")
     axes[0, 2].axis("off")
 
     # Second row
-    # axes[1, 0].imshow(LSM_Only_After)
+    axes[1, 0].imshow(LSM_Only_After)
     axes[1, 0].set_title("LSM Only After")
     axes[1, 0].axis("off")
 
     # Add the mask visualization in grayscale
-    # axes[1, 1].imshow(mask, cmap="gray")
+    axes[1, 1].imshow(mask, cmap="gray")
     axes[1, 1].set_title("Mask")
     axes[1, 1].axis("off")
 
     # Compute masked image
-    # axes[1, 2].imshow(LMS_True_Color_dNDVI_Masked, cmap="gray")
+    axes[1, 2].imshow(LMS_True_Color_dNDVI_Masked, cmap="gray")
     axes[1, 2].set_title("LMS True Color Masked")
     axes[1, 2].axis("off")
 
     plt.tight_layout()
     plt.savefig(f"{project_name}/{project_name}-combined_image.png")
-    plt.show()
+    # plt.show()
 
     with open("Mapping Automation Completions.txt", "a") as log_file:
         log_file.write(f"{nasa_landslides.iloc[landlside_row].event_title}\n")
+    plt.close()
 
     

@@ -1,0 +1,6 @@
+Project Name: Campbell-Riverview Mud Debris
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -121.33563438016415
+Start Date: 2018-08-15
+End Date: 2018-09-14

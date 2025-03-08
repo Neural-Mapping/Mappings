@@ -1,0 +1,6 @@
+Project Name: El Cua landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -85.67863837016415
+Start Date: 2020-06-11
+End Date: 2020-07-11

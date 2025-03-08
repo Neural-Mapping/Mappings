@@ -1,0 +1,6 @@
+Project Name: A9 Landslip at Helmsdale
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -3.6517110301641504
+Start Date: 2018-06-28
+End Date: 2018-07-28

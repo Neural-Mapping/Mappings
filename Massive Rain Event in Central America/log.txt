@@ -1,0 +1,6 @@
+Project Name: Massive Rain Event in Central America
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -88.04390617016415
+Start Date: 2018-09-15
+End Date: 2018-10-30

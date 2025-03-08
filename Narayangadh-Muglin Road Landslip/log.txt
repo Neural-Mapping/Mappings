@@ -1,0 +1,6 @@
+Project Name: Narayangadh-Muglin Road Landslip
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 84.46711129983585
+Start Date: 2018-07-08
+End Date: 2018-09-01

@@ -1,0 +1,6 @@
+Project Name: Landslide on road to longhouses at Sungai Pak Durin
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 111.98512037983585
+Start Date: 2018-11-22
+End Date: 2018-12-17
