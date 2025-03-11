@@ -238,7 +238,6 @@ for landlside_row in range(nasa_landslides.shape[0]):
     available_dates_cloud_coverage = get_cloud_coverage(lat=lat, lon=lon, date_list=available_dates)
     
     min_before_date, min_before_cc, min_after_date, min_after_cc = find_best_date(available_dates_cloud_coverage, target_date=date)
-    min_before_date, min_before_cc, min_after_date, min_after_cc
 
     min_lat, min_lon  = lat, lon
     start_date = min_before_date
@@ -297,7 +296,7 @@ for landlside_row in range(nasa_landslides.shape[0]):
     mask = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY)
     mask_resized = cv2.resize(mask, (mask.shape[0]//4, mask.shape[0]//4))
     mask = cv2.resize(mask_resized, mask.shape)
-    mask = cv2.threshold(mask, 0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)[1]
+    mask = cv2.threshold(mask, 0, 255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)[1]
 
     plt.imsave(f"{project_name}/{project_name}-dNDVI-masked.png", mask, cmap='gray')
 
