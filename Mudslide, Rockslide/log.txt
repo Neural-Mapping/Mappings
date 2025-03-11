@@ -1,0 +1,6 @@
+Project Name: Mudslide, Rockslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -73.81735244016414
+Start Date: 2019-06-02
+End Date: 2019-07-02

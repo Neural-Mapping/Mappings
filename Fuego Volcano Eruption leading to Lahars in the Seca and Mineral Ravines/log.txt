@@ -1,0 +1,6 @@
+Project Name: Fuego Volcano Eruption leading to Lahars in the Seca and Mineral Ravines
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -90.92045255016416
+Start Date: 2018-06-03
+End Date: 2018-06-10

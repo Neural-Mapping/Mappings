@@ -1,0 +1,6 @@
+Project Name: Penticton Speedway Mudslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -119.52636071016416
+Start Date: 2018-03-28
+End Date: 2018-04-27

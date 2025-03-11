@@ -1,0 +1,6 @@
+Project Name: Tyrol_ landslides with evacuations in the Kaiserbach Valley in Kirchdorf
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 12.375436579835851
+Start Date: 2019-08-19
+End Date: 2019-08-26

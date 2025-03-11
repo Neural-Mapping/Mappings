@@ -1,0 +1,6 @@
+Project Name: Hotel in Ramsau hit by a huge avalanche
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 13.65220082983585
+Start Date: 2018-12-29
+End Date: 2019-01-18

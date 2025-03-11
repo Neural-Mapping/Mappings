@@ -1,0 +1,6 @@
+Project Name: Tatopani Landslide Buries Three Houses
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 85.92937734983585
+Start Date: 2018-05-11
+End Date: 2018-06-10

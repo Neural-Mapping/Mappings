@@ -1,0 +1,6 @@
+Project Name: Rockfall destroys parked cars
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 8.43662534983585
+Start Date: 2019-04-29
+End Date: 2019-06-13

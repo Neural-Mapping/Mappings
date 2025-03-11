@@ -1,0 +1,6 @@
+Project Name: San-Khar village and Lone-Khin village Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 96.30687507983585
+Start Date: 2018-07-13
+End Date: 2018-07-23

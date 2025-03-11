@@ -1,0 +1,6 @@
+Project Name: Ayios-Demetrios-Lemythou Rockslides and Landslides
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 32.81105815983585
+Start Date: 2018-05-24
+End Date: 2018-06-08

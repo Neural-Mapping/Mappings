@@ -1,0 +1,6 @@
+Project Name: Landslide on Chandigargh-Manali HWY near Banala
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 77.18567860983585
+Start Date: 2018-10-30
+End Date: 2018-11-24

@@ -1,0 +1,6 @@
+Project Name: Penang landslide killed one young man
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 100.27888292983585
+Start Date: 2018-10-18
+End Date: 2018-11-02

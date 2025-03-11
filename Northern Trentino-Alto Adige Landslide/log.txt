@@ -1,0 +1,6 @@
+Project Name: Northern Trentino-Alto Adige Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 11.28851533983585
+Start Date: 2018-10-08
+End Date: 2018-11-07

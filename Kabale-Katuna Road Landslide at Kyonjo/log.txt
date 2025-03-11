@@ -1,0 +1,6 @@
+Project Name: Kabale-Katuna Road Landslide at Kyonjo
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 30.004433279835848
+Start Date: 2018-05-15
+End Date: 2018-06-04

@@ -1,0 +1,6 @@
+Project Name: Road closed
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -73.82487826016416
+Start Date: 2019-04-23
+End Date: 2019-06-02

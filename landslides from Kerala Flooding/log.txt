@@ -1,0 +1,6 @@
+Project Name: landslides from Kerala Flooding
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.62976742983584
+Start Date: 2020-07-31
+End Date: 2020-08-25

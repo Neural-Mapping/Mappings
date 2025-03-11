@@ -1,0 +1,6 @@
+Project Name: Transfagarasan Rock Slide Hits Two Cars
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 24.612933619835847
+Start Date: 2018-04-28
+End Date: 2018-06-02

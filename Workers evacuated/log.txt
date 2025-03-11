@@ -1,0 +1,6 @@
+Project Name: Workers evacuated
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -75.65963119016415
+Start Date: 2018-05-11
+End Date: 2018-07-10

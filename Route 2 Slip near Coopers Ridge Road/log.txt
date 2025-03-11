@@ -1,0 +1,6 @@
+Project Name: Route 2 Slip near Coopers Ridge Road
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -81.41139991016415
+Start Date: 2018-05-12
+End Date: 2018-06-16

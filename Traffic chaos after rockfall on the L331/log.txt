@@ -1,0 +1,6 @@
+Project Name: Traffic chaos after rockfall on the L331
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 7.2456067898358505
+Start Date: 2019-05-07
+End Date: 2019-06-03

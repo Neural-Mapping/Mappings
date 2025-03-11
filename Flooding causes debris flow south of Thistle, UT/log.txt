@@ -1,0 +1,6 @@
+Project Name: Flooding causes debris flow south of Thistle, UT
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -111.54382858016415
+Start Date: 2019-06-24
+End Date: 2019-07-02

@@ -1,0 +1,6 @@
+Project Name: Unnamed Draw Mudslide outside of Yellowstone for 3rd time out of 3
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -109.99754645016415
+Start Date: 2018-05-10
+End Date: 2018-06-09

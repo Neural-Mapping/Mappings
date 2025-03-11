@@ -1,0 +1,6 @@
+Project Name: Landslide near construction site of the Char Dham National Highway, Ukhimath
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 79.09214113983585
+Start Date: 2018-12-16
+End Date: 2019-01-15

@@ -1,0 +1,6 @@
+Project Name: Widespread landslide damage in Nagaland
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 94.10484999983585
+Start Date: 2018-07-16
+End Date: 2018-08-25

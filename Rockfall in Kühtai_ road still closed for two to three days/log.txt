@@ -1,0 +1,6 @@
+Project Name: Rockfall in Kühtai_ road still closed for two to three days
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 10.94829160983585
+Start Date: 2019-04-26
+End Date: 2019-06-05

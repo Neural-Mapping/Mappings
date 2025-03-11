@@ -1,4 +1,4 @@
-print("""
+print(r"""
          ,-.
         / \  `.  __..-,O
        :   \ --''_..-'.'
@@ -16,7 +16,6 @@ print("""
        // || \\
     __//__||__\\__
    '--------------' 
-      
 """)
 import requests
 from datetime import datetime, timedelta
@@ -317,37 +316,37 @@ for landlside_row in range(nasa_landslides.shape[0]):
     LMS_True_Color_dNDVI_Masked[mask[:,:, None].repeat(3, -1) == 255] = LSM_Only_After[mask[:,:, None].repeat(3, -1) == 255]
 
     # plt.imshow(LMS_True_Color_dNDVI_Masked); plt.axis("off")
-    plt.project_name("LMS True Color Masked")
+    plt.title("LMS True Color Masked")
     plt.imsave(f"{project_name}/{project_name}-LMS_True_Color_dNDVI_Masked.png", LMS_True_Color_dNDVI_Masked)
 
     fig, axes = plt.subplots(2, 3, figsize=(20, 10))
 
     # First row
     axes[0, 0].imshow(NDVI_Before)
-    axes[0, 0].set_project_name("NDVI Before")
+    axes[0, 0].set_title("NDVI Before")
     axes[0, 0].axis("off")
 
     axes[0, 1].imshow(NDVI_After)
-    axes[0, 1].set_project_name("NDVI After")
+    axes[0, 1].set_title("NDVI After")
     axes[0, 1].axis("off")
 
     axes[0, 2].imshow(True_Color_After)
-    axes[0, 2].set_project_name("True Color After")
+    axes[0, 2].set_title("True Color After")
     axes[0, 2].axis("off")
 
     # Second row
     axes[1, 0].imshow(LSM_Only_After)
-    axes[1, 0].set_project_name("LSM Only After")
+    axes[1, 0].set_title("LSM Only After")
     axes[1, 0].axis("off")
 
     # Add the mask visualization in grayscale
     axes[1, 1].imshow(mask, cmap="gray")
-    axes[1, 1].set_project_name("Mask")
+    axes[1, 1].set_title("Mask")
     axes[1, 1].axis("off")
 
     # Compute masked image
     axes[1, 2].imshow(LMS_True_Color_dNDVI_Masked, cmap="gray")
-    axes[1, 2].set_project_name("LMS True Color Masked")
+    axes[1, 2].set_title("LMS True Color Masked")
     axes[1, 2].axis("off")
 
     plt.tight_layout()

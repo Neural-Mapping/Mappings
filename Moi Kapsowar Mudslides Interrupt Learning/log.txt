@@ -1,0 +1,6 @@
+Project Name: Moi Kapsowar Mudslides Interrupt Learning
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 35.56208736983585
+Start Date: 2018-05-16
+End Date: 2018-05-26

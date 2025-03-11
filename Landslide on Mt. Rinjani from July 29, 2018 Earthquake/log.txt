@@ -1,0 +1,6 @@
+Project Name: Landslide on Mt. Rinjani from July 29, 2018 Earthquake
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 116.45884568983585
+Start Date: 2018-07-19
+End Date: 2018-08-23

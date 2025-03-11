@@ -1,0 +1,6 @@
+Project Name: Unnamed Draw Mudslide for 2nd time out of 3
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -109.99759314016416
+Start Date: 2018-04-25
+End Date: 2018-05-10

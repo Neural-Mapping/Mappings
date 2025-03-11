@@ -1,0 +1,6 @@
+Project Name: Avalanche takes seven people with it
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 7.32192082983585
+Start Date: 2019-05-07
+End Date: 2019-06-03

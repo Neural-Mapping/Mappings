@@ -1,0 +1,6 @@
+Project Name: 1 killed on roadway
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -79.27712753016415
+Start Date: 2019-05-19
+End Date: 2019-05-24

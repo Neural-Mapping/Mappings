@@ -1,0 +1,6 @@
+Project Name: Qarlaq Sali village landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 69.93671816983584
+Start Date: 2018-05-07
+End Date: 2018-06-03

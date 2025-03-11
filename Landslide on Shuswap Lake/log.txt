@@ -1,0 +1,6 @@
+Project Name: Landslide on Shuswap Lake
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -118.95123042016415
+Start Date: 2020-06-30
+End Date: 2020-07-05

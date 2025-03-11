@@ -1,0 +1,6 @@
+Project Name: Bear Creek Drive Mudslide on Alpine Meadows Road
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -120.23791654016415
+Start Date: 2018-04-27
+End Date: 2018-06-06

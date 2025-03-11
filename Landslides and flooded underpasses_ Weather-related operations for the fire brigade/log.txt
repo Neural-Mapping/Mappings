@@ -1,0 +1,6 @@
+Project Name: Landslides and flooded underpasses_ Weather-related operations for the fire brigade
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 8.60662752983585
+Start Date: 2019-04-29
+End Date: 2019-06-13

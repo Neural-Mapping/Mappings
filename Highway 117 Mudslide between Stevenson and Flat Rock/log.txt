@@ -1,0 +1,6 @@
+Project Name: Highway 117 Mudslide between Stevenson and Flat Rock
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -85.76250084016417
+Start Date: 2018-12-24
+End Date: 2019-01-25

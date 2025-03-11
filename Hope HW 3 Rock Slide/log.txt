@@ -1,0 +1,6 @@
+Project Name: Hope HW 3 Rock Slide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -121.29276904016415
+Start Date: 2018-11-06
+End Date: 2018-12-11

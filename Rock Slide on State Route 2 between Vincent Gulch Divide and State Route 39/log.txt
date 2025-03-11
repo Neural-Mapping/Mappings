@@ -1,0 +1,6 @@
+Project Name: Rock Slide on State Route 2 between Vincent Gulch Divide and State Route 39
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -117.80101946016416
+Start Date: 2018-11-30
+End Date: 2018-12-15

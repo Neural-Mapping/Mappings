@@ -1,0 +1,6 @@
+Project Name: Kushka (Serhetabat) Mudflows
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 62.33044902983585
+Start Date: 2018-04-26
+End Date: 2018-06-10

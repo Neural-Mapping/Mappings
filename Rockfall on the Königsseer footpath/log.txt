@@ -1,0 +1,6 @@
+Project Name: Rockfall on the Königsseer footpath
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 12.98686216983585
+Start Date: 2019-04-18
+End Date: 2019-05-23

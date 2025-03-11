@@ -1,0 +1,6 @@
+Project Name: Salzburger Land_ mudslide discharge causes flooding
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 12.56181052983585
+Start Date: 2019-06-27
+End Date: 2019-07-05

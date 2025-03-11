@@ -1,0 +1,6 @@
+Project Name: San Jose de Minas Hydroelectric project landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -78.41300274016415
+Start Date: 2018-12-22
+End Date: 2019-01-09

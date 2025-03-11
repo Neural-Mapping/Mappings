@@ -1,0 +1,6 @@
+Project Name: Siete Vueltas Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -91.33397577016414
+Start Date: 2018-05-06
+End Date: 2018-06-03

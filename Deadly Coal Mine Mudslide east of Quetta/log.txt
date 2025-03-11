@@ -1,0 +1,6 @@
+Project Name: Deadly Coal Mine Mudslide east of Quetta
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 67.12756806983585
+Start Date: 2018-04-05
+End Date: 2018-06-04

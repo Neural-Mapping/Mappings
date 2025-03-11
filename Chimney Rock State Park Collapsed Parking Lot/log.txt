@@ -1,0 +1,6 @@
+Project Name: Chimney Rock State Park Collapsed Parking Lot
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -82.24979685016415
+Start Date: 2018-05-12
+End Date: 2018-06-16

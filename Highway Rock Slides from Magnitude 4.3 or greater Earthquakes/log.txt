@@ -1,0 +1,6 @@
+Project Name: Highway Rock Slides from Magnitude 4.3 or greater Earthquakes
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -88.11559830016415
+Start Date: 2018-04-28
+End Date: 2018-05-08

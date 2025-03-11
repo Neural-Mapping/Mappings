@@ -1,0 +1,6 @@
+Project Name: Erdrutsch in der Rochus-Merz-Straße in Schramberg
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 8.379044459835852
+Start Date: 2017-12-25
+End Date: 2018-01-24

@@ -1,0 +1,6 @@
+Project Name: Sonamarg-Drass Stretch Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.54620956983585
+Start Date: 2018-05-28
+End Date: 2018-06-12

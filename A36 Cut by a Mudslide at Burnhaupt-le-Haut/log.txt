@@ -1,0 +1,6 @@
+Project Name: A36 Cut by a Mudslide at Burnhaupt-le-Haut
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 7.12943218983585
+Start Date: 2018-05-24
+End Date: 2018-07-03

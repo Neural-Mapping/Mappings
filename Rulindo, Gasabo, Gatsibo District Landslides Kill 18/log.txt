@@ -1,0 +1,6 @@
+Project Name: Rulindo, Gasabo, Gatsibo District Landslides Kill 18
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 30.01735498983585
+Start Date: 2018-04-22
+End Date: 2018-04-25

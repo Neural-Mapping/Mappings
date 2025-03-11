@@ -1,0 +1,6 @@
+Project Name: Road from Haldummulla to Ginigathgala Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 80.86786653983584
+Start Date: 2018-04-07
+End Date: 2018-06-01

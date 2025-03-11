@@ -1,0 +1,6 @@
+Project Name: Landslides blocked Jammu-Srinagar Highway
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.32806837983584
+Start Date: 2020-04-12
+End Date: 2020-04-27

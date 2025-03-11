@@ -1,0 +1,6 @@
+Project Name: Bluefield WV rock slide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -81.10710888016416
+Start Date: 2018-07-08
+End Date: 2018-08-27

@@ -1,0 +1,6 @@
+Project Name: Landslides and slips occur after monsoon impacts India
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.80840132983585
+Start Date: 2018-07-22
+End Date: 2018-08-06

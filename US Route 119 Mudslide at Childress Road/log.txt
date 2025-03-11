@@ -1,0 +1,6 @@
+Project Name: US Route 119 Mudslide at Childress Road
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -81.73339508016414
+Start Date: 2018-11-28
+End Date: 2019-01-22

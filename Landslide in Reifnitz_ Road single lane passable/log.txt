@@ -1,0 +1,6 @@
+Project Name: Landslide in Reifnitz_ Road single lane passable
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 14.17770861983585
+Start Date: 2019-03-04
+End Date: 2019-03-24

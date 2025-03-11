@@ -1,0 +1,6 @@
+Project Name: Riverside Avenue Property Mudslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -117.69748190016415
+Start Date: 2018-02-28
+End Date: 2018-04-04

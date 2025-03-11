@@ -1,0 +1,6 @@
+Project Name: Kyzyl-Kiya Mudflows affect 5 Apartments
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 72.13832279983585
+Start Date: 2018-05-09
+End Date: 2018-06-03

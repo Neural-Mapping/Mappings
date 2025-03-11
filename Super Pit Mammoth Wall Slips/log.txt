@@ -1,0 +1,6 @@
+Project Name: Super Pit Mammoth Wall Slips
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 121.50649454983585
+Start Date: 2018-05-09
+End Date: 2018-05-14

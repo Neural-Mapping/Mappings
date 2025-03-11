@@ -1,0 +1,6 @@
+Project Name: Casa Bonita Homes Affected by Mudflow
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 120.39440335983585
+Start Date: 2018-04-19
+End Date: 2018-04-27

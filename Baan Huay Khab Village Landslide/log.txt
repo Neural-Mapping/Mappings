@@ -1,0 +1,6 @@
+Project Name: Baan Huay Khab Village Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 100.90768008983585
+Start Date: 2018-07-27
+End Date: 2018-08-06

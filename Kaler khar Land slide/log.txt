@@ -1,0 +1,6 @@
+Project Name: Kaler khar Land slide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 72.75814950983585
+Start Date: 2018-09-08
+End Date: 2018-10-28
