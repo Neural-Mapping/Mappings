@@ -1,3 +1,23 @@
+print("""
+         ,-.
+        / \  `.  __..-,O
+       :   \ --''_..-'.'
+       |    . .-' `. '.
+       :     .     .`.'
+        \     `.  /  ..
+         \      `.   ' .
+          `,       `.   \
+         ,|,`.        `-.\
+        '.||  ``-...__..-`
+         |  |
+         |__|
+         /||\
+        //||\\
+       // || \\
+    __//__||__\\__
+   '--------------' 
+      
+""")
 import requests
 from datetime import datetime, timedelta
 import os
@@ -190,7 +210,7 @@ nasa_landslides["event_date"] = nasa_landslides["event_date"].dt.date
 
 for landlside_row in range(nasa_landslides.shape[0]):
     project_name = nasa_landslides.iloc[landlside_row].event_title
-    project_name = re.sub(r'[\/:*?"<>|]', '_', project_name)
+    project_name = re.sub(r'[\/:*?"<>|]', '_', project_name).strip()
     print("*"*20)
 
     with open("do_not_attend.txt", "r") as log_file:
@@ -290,7 +310,7 @@ for landlside_row in range(nasa_landslides.shape[0]):
     LMS_True_Color_dNDVI_not_Masked[black_pixels] = True_Color_After[black_pixels]
 
     # plt.imshow(LMS_True_Color_dNDVI_not_Masked); plt.axis("off")
-    plt.project_name("LMS True Color Not Masked")
+    plt.title("LMS True Color Not Masked")
     plt.imsave(f"{project_name}/{project_name}-LMS_True_Color_dNDVI_Not_Masked.png", LMS_True_Color_dNDVI_not_Masked)
 
     LMS_True_Color_dNDVI_Masked = True_Color_After.copy()
