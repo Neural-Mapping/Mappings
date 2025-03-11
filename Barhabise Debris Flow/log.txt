@@ -1,0 +1,6 @@
+Project Name: Barhabise Debris Flow
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 85.91049021983585
+Start Date: 2018-07-30
+End Date: 2018-08-29

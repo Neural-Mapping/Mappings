@@ -1,0 +1,6 @@
+Project Name: Deslizamiento de tierra en el Cerro del Chiquihuite, Tlalnepantla, México
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -99.12581797016415
+Start Date: 2021-09-09
+End Date: 2021-09-19

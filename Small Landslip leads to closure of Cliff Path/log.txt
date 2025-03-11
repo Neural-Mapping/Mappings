@@ -1,0 +1,6 @@
+Project Name: Small Landslip leads to closure of Cliff Path
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -1.1645683101641504
+Start Date: 2018-12-12
+End Date: 2018-12-22

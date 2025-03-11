@@ -1,0 +1,6 @@
+Project Name: Stanton KY North Bend Mudslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -83.82639439016415
+Start Date: 2019-06-14
+End Date: 2019-06-21

@@ -1,0 +1,6 @@
+Project Name: Lochaber Massive Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -5.598856590164149
+Start Date: 2018-01-17
+End Date: 2018-01-27

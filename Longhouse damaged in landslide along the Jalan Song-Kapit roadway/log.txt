@@ -1,0 +1,6 @@
+Project Name: Longhouse damaged in landslide along the Jalan Song-Kapit roadway
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 112.82734826983585
+Start Date: 2018-12-04
+End Date: 2018-12-14

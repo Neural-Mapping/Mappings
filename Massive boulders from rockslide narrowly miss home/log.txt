@@ -1,0 +1,6 @@
+Project Name: Massive boulders from rockslide narrowly miss home
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -107.67690217016415
+Start Date: 2018-10-19
+End Date: 2018-11-08

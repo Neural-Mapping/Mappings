@@ -1,0 +1,6 @@
+Project Name: Forclaz-Passstrasse wird nach Erdrutsch vom Januar wieder eröffnet
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 7.020592499835851
+Start Date: 2017-12-25
+End Date: 2018-01-17

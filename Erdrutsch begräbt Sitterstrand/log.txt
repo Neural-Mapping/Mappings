@@ -1,0 +1,6 @@
+Project Name: Erdrutsch begräbt Sitterstrand
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 9.36390790983585
+Start Date: 2018-01-31
+End Date: 2018-03-10

@@ -1,0 +1,6 @@
+Project Name: Rattlesnake Ridge Creep Developing
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -121.86030071016415
+Start Date: 2018-01-20
+End Date: 2018-02-09

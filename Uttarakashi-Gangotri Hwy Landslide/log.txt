@@ -1,0 +1,6 @@
+Project Name: Uttarakashi-Gangotri Hwy Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 78.68332913983585
+Start Date: 2018-07-29
+End Date: 2018-08-18

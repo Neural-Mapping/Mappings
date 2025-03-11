@@ -1,0 +1,6 @@
+Project Name: Thati Bazaar Landslip
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 82.21100726983585
+Start Date: 2018-07-21
+End Date: 2018-08-10

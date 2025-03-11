@@ -1,0 +1,6 @@
+Project Name: Mudslide at Leo Carillo State Beach
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -118.94082862016415
+Start Date: 2020-05-01
+End Date: 2020-05-26

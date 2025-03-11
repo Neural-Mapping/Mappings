@@ -1,0 +1,6 @@
+Project Name: Glasgow-Edinburgh Railway Landslip at Winchburgh
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -3.45711168016415
+Start Date: 2018-01-04
+End Date: 2018-02-13

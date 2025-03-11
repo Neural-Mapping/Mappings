@@ -14,6 +14,8 @@ from utils import *
 import folium
 import ee
 import geemap
+import shutil
+import re
 
 CLIENT_ID = os.environ.get("sh_client_id")
 CLIENT_SECRET = os.environ.get("sh_client_secret")
@@ -187,12 +189,21 @@ nasa_landslides = nasa_landslides[(nasa_landslides["event_date"] > "2018-01-01")
 nasa_landslides["event_date"] = nasa_landslides["event_date"].dt.date
 
 for landlside_row in range(nasa_landslides.shape[0]):
+    project_name = nasa_landslides.iloc[landlside_row].event_title
+    project_name = re.sub(r'[\/:*?"<>|]', '_', project_name)
     print("*"*20)
-    with open("Mapping Automation Completions.txt", "r") as log_file:
+
+    with open("do_not_attend.txt", "r") as log_file:
         content = [line.strip() for line in log_file]
-        if nasa_landslides.iloc[landlside_row].event_title in content: 
-            print(f"Skipping: {nasa_landslides.iloc[landlside_row].event_title}")
+        if project_name in content: 
+            print(f"{project_name} in DO NOT ATTEND: reason: Unknown") # havent figured this out yet lol
             continue
+
+    # with open("Mapping Automation Completions.txt", "r") as log_file:
+    #     content = [line.strip() for line in log_file]
+    #     if project_name in content: 
+    #         print(f"Skipping: {project_name}: Already exists")
+    #         continue
     
     print("GETTING BEST DATES\n")
     date = nasa_landslides.iloc[landlside_row].event_date.strftime("%Y-%m-%d")
@@ -201,7 +212,9 @@ for landlside_row in range(nasa_landslides.shape[0]):
                                             lat = lat,
                                             lon = lon)
     if available_dates == None: 
-        print(f"Skipping: {nasa_landslides.iloc[landlside_row].event_title}")
+        print(f"Skipping: {project_name}: Dates not available")
+        with open("do_not_attend.txt", "a") as log_file:
+            log_file.write(f"{project_name}\n")
         continue
     available_dates_cloud_coverage = get_cloud_coverage(lat=lat, lon=lon, date_list=available_dates)
     
@@ -211,8 +224,14 @@ for landlside_row in range(nasa_landslides.shape[0]):
     min_lat, min_lon  = lat, lon
     start_date = min_before_date
     end_date = min_after_date
-    project_name = nasa_landslides.iloc[landlside_row].event_title
-
+    # project_name = project_name
+    if start_date == "" or end_date == "":
+        print(f"Skipping: {project_name}: start date or end date not found")
+        # shutil.rmtree(project_name)
+        with open("do_not_attend.txt", "a") as log_file:
+            log_file.write(f"{project_name}\n")
+        continue
+    
     os.makedirs(project_name, exist_ok=True)
     with open(f'{project_name}/log.txt', 'w') as f:
         f.write(f'Project Name: {project_name}\n')
@@ -271,44 +290,44 @@ for landlside_row in range(nasa_landslides.shape[0]):
     LMS_True_Color_dNDVI_not_Masked[black_pixels] = True_Color_After[black_pixels]
 
     # plt.imshow(LMS_True_Color_dNDVI_not_Masked); plt.axis("off")
-    plt.title("LMS True Color Not Masked")
+    plt.project_name("LMS True Color Not Masked")
     plt.imsave(f"{project_name}/{project_name}-LMS_True_Color_dNDVI_Not_Masked.png", LMS_True_Color_dNDVI_not_Masked)
 
     LMS_True_Color_dNDVI_Masked = True_Color_After.copy()
     LMS_True_Color_dNDVI_Masked[mask[:,:, None].repeat(3, -1) == 255] = LSM_Only_After[mask[:,:, None].repeat(3, -1) == 255]
 
     # plt.imshow(LMS_True_Color_dNDVI_Masked); plt.axis("off")
-    plt.title("LMS True Color Masked")
+    plt.project_name("LMS True Color Masked")
     plt.imsave(f"{project_name}/{project_name}-LMS_True_Color_dNDVI_Masked.png", LMS_True_Color_dNDVI_Masked)
 
     fig, axes = plt.subplots(2, 3, figsize=(20, 10))
 
     # First row
     axes[0, 0].imshow(NDVI_Before)
-    axes[0, 0].set_title("NDVI Before")
+    axes[0, 0].set_project_name("NDVI Before")
     axes[0, 0].axis("off")
 
     axes[0, 1].imshow(NDVI_After)
-    axes[0, 1].set_title("NDVI After")
+    axes[0, 1].set_project_name("NDVI After")
     axes[0, 1].axis("off")
 
     axes[0, 2].imshow(True_Color_After)
-    axes[0, 2].set_title("True Color After")
+    axes[0, 2].set_project_name("True Color After")
     axes[0, 2].axis("off")
 
     # Second row
     axes[1, 0].imshow(LSM_Only_After)
-    axes[1, 0].set_title("LSM Only After")
+    axes[1, 0].set_project_name("LSM Only After")
     axes[1, 0].axis("off")
 
     # Add the mask visualization in grayscale
     axes[1, 1].imshow(mask, cmap="gray")
-    axes[1, 1].set_title("Mask")
+    axes[1, 1].set_project_name("Mask")
     axes[1, 1].axis("off")
 
     # Compute masked image
     axes[1, 2].imshow(LMS_True_Color_dNDVI_Masked, cmap="gray")
-    axes[1, 2].set_title("LMS True Color Masked")
+    axes[1, 2].set_project_name("LMS True Color Masked")
     axes[1, 2].axis("off")
 
     plt.tight_layout()
@@ -316,7 +335,10 @@ for landlside_row in range(nasa_landslides.shape[0]):
     # plt.show()
 
     with open("Mapping Automation Completions.txt", "a") as log_file:
-        log_file.write(f"{nasa_landslides.iloc[landlside_row].event_title}\n")
+        log_file.write(f"{project_name}\n")
+    with open("do_not_attend.txt", "a") as log_file:
+        log_file.write(f"{project_name}\n")
+                       
     plt.close()
 
     

@@ -1,0 +1,6 @@
+Project Name: Landslide on Scarborough South Beach
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -0.39561566016415023
+Start Date: 2018-11-04
+End Date: 2018-12-04

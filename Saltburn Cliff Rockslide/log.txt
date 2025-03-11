@@ -1,0 +1,6 @@
+Project Name: Saltburn Cliff Rockslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -0.9828062101641502
+Start Date: 2018-07-10
+End Date: 2018-08-14
