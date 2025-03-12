@@ -41,7 +41,9 @@ with open("Mapping Automation Completions.txt", "r") as file:
             canvas = (canvas * 255).astype(np.uint8)
 
             plt.imsave(f"Dataset/{file_name}.jpg", canvas)
-        except: pass
+        except:
+            print("Skip")
+            pass
 
 
 

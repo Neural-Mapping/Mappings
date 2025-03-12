@@ -209,7 +209,7 @@ nasa_landslides["event_date"] = nasa_landslides["event_date"].dt.date
 
 for landlside_row in range(nasa_landslides.shape[0]):
     project_name = nasa_landslides.iloc[landlside_row].event_title
-    project_name = re.sub(r'[\/:*?"<>|]', '_', project_name).strip()
+    project_name = re.sub(r'[\/:*?"<>|]', '_', str(project_name)).strip()
     print("*"*20)
 
     with open("do_not_attend.txt", "r") as log_file:
