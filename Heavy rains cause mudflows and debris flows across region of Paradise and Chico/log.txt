@@ -1,0 +1,6 @@
+Project Name: Heavy rains cause mudflows and debris flows across region of Paradise and Chico
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -121.70991256016416
+Start Date: 2018-11-06
+End Date: 2018-12-11

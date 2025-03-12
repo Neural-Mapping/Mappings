@@ -1,0 +1,6 @@
+Project Name: Baggo Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 121.97566134983585
+Start Date: 2019-10-31
+End Date: 2019-11-15

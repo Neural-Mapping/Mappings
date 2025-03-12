@@ -1,0 +1,6 @@
+Project Name: Automated Inventory of Landslides in Mexico, 2022-05-30
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -96.36974946016416
+Start Date: 2022-05-16
+End Date: 2022-06-13

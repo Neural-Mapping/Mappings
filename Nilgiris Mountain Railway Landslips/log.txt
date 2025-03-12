@@ -1,0 +1,6 @@
+Project Name: Nilgiris Mountain Railway Landslips
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 76.88267040983585
+Start Date: 2018-09-05
+End Date: 2018-10-20

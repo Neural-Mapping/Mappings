@@ -1,0 +1,6 @@
+Project Name: Sep 23, 2018 Chamba Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 76.12289421983584
+Start Date: 2018-09-20
+End Date: 2018-10-20

@@ -1,0 +1,6 @@
+Project Name: Kalama River Road Landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -122.81269474016415
+Start Date: 2018-09-12
+End Date: 2018-09-17

@@ -1,0 +1,6 @@
+Project Name: Route 140 Yosemite Mudslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -119.92154968016415
+Start Date: 2018-09-14
+End Date: 2018-10-14

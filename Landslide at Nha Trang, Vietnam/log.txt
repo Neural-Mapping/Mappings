@@ -1,0 +1,6 @@
+Project Name: Landslide at Nha Trang, Vietnam
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 109.20992442983585
+Start Date: 2018-10-31
+End Date: 2018-11-25

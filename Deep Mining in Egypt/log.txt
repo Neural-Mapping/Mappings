@@ -1,0 +1,6 @@
+Project Name: Deep Mining in Egypt
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 31.370444399835847
+Start Date: 2022-04-06
+End Date: 2022-05-06

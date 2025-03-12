@@ -1,0 +1,6 @@
+Project Name: North Sikkim Landslides
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 88.62928916983584
+Start Date: 2018-09-15
+End Date: 2018-09-30

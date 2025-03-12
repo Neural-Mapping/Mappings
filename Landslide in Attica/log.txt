@@ -1,0 +1,6 @@
+Project Name: Landslide in Attica
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 22.990345539835847
+Start Date: 2019-06-25
+End Date: 2019-06-30

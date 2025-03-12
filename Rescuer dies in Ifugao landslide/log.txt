@@ -1,0 +1,6 @@
+Project Name: Rescuer dies in Ifugao landslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 121.04607501983585
+Start Date: 2018-10-26
+End Date: 2018-11-20

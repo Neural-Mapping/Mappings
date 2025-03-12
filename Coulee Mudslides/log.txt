@@ -1,0 +1,6 @@
+Project Name: Coulee Mudslides
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -91.11612390016415
+Start Date: 2018-08-27
+End Date: 2018-09-13

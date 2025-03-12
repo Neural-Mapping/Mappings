@@ -1,0 +1,6 @@
+Project Name: Mengdong Mudslide
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 102.60026638983585
+Start Date: 2018-08-23
+End Date: 2018-09-22

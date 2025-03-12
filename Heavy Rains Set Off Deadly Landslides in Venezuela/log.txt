@@ -1,0 +1,6 @@
+Project Name: Heavy Rains Set Off Deadly Landslides in Venezuela
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, -96.79750917016415
+Start Date: 2022-09-26
+End Date: 2022-10-21

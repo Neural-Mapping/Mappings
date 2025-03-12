@@ -1,0 +1,6 @@
+Project Name: Banasura Sugar Dam Landslides
+Grid size: 1 x 1
+Box Dimension: 5 km
+Bounding Box: 35.49159946815413, 75.96206517983585
+Start Date: 2018-08-21
+End Date: 2018-09-20
