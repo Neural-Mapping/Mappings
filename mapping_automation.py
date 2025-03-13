@@ -358,3 +358,5 @@ for landlside_row in range(nasa_landslides.shape[0]):
         log_file.write(f"{project_name}\n")
                        
     plt.close()
+
+    
