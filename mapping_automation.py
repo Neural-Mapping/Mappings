@@ -314,6 +314,11 @@ for landlside_row in range(nasa_landslides.shape[0]):
     LMS_True_Color_dNDVI_Masked = True_Color_After.copy()
     LMS_True_Color_dNDVI_Masked[mask[:,:, None].repeat(3, -1) == 255] = LSM_Only_After[mask[:,:, None].repeat(3, -1) == 255]
 
+    # replace black spots with true color (i should have figured this out since the start lol)
+    black_mask = np.all(LMS_True_Color_dNDVI_Masked == [0, 0, 0], axis=-1)
+    output = LMS_True_Color_dNDVI_Masked.copy()
+    LMS_True_Color_dNDVI_Masked[black_mask] = True_Color_After[black_mask]
+
     # plt.imshow(LMS_True_Color_dNDVI_Masked); plt.axis("off")
     plt.title("LMS True Color Masked")
     plt.imsave(f"{project_name}/{project_name}-LMS_True_Color_dNDVI_Masked.png", LMS_True_Color_dNDVI_Masked)
