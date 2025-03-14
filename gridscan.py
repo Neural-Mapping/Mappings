@@ -165,4 +165,5 @@ if __name__ == "__main__":
     plt.imsave(f"{proj_name}/{proj_name}{ndvi_after_path}", canvas_NDVI_After)
     plt.imsave(f"{proj_name}/{proj_name}-dNDVI_Mask.png", mask, cmap="gray")
     plt.imsave(f"{proj_name}/{proj_name}{LSM_masked_path}", LMS_True_Color_dNDVI_Masked)
-    plt.imsave(f"{proj_name}/{proj_name}LSM_Only.png", canvas_LSM_Only_After)
+    plt.imsave(f"{proj_name}/{proj_name}-LSM_Only.png", canvas_LSM_Only_After)
+    plt.imsave(f"{proj_name}/{proj_name}-LSM_Masked_Only.png", canvas_LSM_Only_After*mask[:, :, None])
