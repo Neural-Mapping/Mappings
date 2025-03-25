@@ -53,6 +53,24 @@ LSM_masked_path = "-LSM_True_Color-After.png"
 mask_path = "-dNDVI-masked.png"
 
 if __name__ == "__main__":
+
+    print(r"""
+         ooo
+        / : \
+       / o0o \
+ _____"~~~~~~~"_____
+ \+###|U * * U|###+/
+  \...!(.>..<)!.../
+   ^^^^o|   |o^^^^
++=====}:^^^^^:{=====+#
+.____  .|!!!|.  ____.
+|#####:/" " "\:#####|
+|#####=|  O  |=#####|
+|#####>\_____/<#####|
+ ^^^^^   | |   ^^^^^
+         o o
+    """)
+        
     parser = argparse.ArgumentParser(description="Run grid scan with parameters.")
 
     # Define required arguments
